@@ -2,3 +2,10 @@
   background-image: url('https://ssl.bigstockimages.com/6/1/2/small2/216252673.jpg');
   background-size: cover;
 }
+.demo-tab-group {
+  border: 1px solid #e8e8e8;
+}
+
+.demo-tab-content {
+  padding: 16px;
+}
