@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { MyMaterialModule } from './my-material.module'
+import { BikeComparisonMaterialModule } from './bike-comparison-material.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import { MyMaterialModule } from './my-material.module'
   ],
   imports: [
     BrowserModule,
-    MyMaterialModule,
+    BikeComparisonMaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

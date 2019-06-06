@@ -103,4 +103,4 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatPaginatorModule
   ]
 })
-export class MyMaterialModule {}
+export class BikeComparisonMaterialModule {}
