@@ -4,8 +4,31 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: 'Roboto', sans-serif; }
 
-// Reusable styles
+/* Reusable styles */
+.flex {
+  display: flex;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-end {
+  align-content: flex-end;
+}
+
+.flex-start {
+  align-content: flex-start;
+}
+
+.flex-direction-row-reverse {
+  flex-direction:  row-reverse;
+}
 
 .justify-space-between {
   justify-content: space-between;
+}
+
+.justify-right {
+  justify-content: right;
 }

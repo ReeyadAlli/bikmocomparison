@@ -1,11 +1,14 @@
 .example-header-image {
-  background-image: url('https://ssl.bigstockimages.com/6/1/2/small2/216252673.jpg');
+  background-image: url('https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/standard/256x256/bicycle.png');
   background-size: cover;
+  border-width: 2px;
+  border-style: dotted;
+  border-color: #4260b5;
 }
 .demo-tab-group {
   border: 1px solid #e8e8e8;
 }
 
-.demo-tab-content {
-  padding: 16px;
+.tab-content {
+  width: 100%;
 }

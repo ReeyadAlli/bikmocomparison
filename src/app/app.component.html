@@ -1,22 +1,30 @@
 <mat-card>
-  <mat-card-header>
+  <mat-card-header class="flex">
     <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Bicycle Central</mat-card-title>
-    <mat-card-subtitle>Servicing/Repair Comparison</mat-card-subtitle>
+    <mat-card-title>Bike Central</mat-card-title>
+    <mat-card-subtitle>Service - Repair - Compare</mat-card-subtitle>
+    <div class="flex-grow-1 flex flex-direction-row-reverse">
+      <div>
+          <button mat-stroked-button color="primary"><i class="material-icons">shopping_basket</i>Basket</button>
+      </div>
+    </div>
   </mat-card-header>
 
   <mat-card-content>
       <nav mat-tab-nav-bar>
+      <div class="flex justify-space-between tab-content">
+        <div *ngFor="let link of comparisonLinks">
           <a mat-tab-link
-             *ngFor="let link of comparisonLinks"
-             [routerLink]="link.path"
-             routerLinkActive #rla="routerLinkActive"
-             [active]="rla.isActive">
-            {{link.label}}
+            [routerLink]="link.path"
+            routerLinkActive #rla="routerLinkActive"
+            [active]="rla.isActive">
+            <i class="material-icons">{{link.icon}}</i> {{link.label}}
           </a>
-        </nav>
+        </div>
+      </div>
+    </nav>
 
-        <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
   </mat-card-content>
 
   <mat-card-footer></mat-card-footer>
