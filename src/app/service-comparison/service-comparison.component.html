@@ -1,3 +1,25 @@
-<p>
-  service-comparison works!
-</p>
+<mat-accordion *ngIf=!loading>
+  <mat-expansion-panel *ngFor="let service of availableServices">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+          <img matListAvatar height="35px" width="210px" [src]="service.provider.logoUrl" alt="service.provider">
+        <!-- {{service.provider.name}} -->
+      </mat-panel-title>
+      <mat-panel-description>
+        {{ service.name}} - {{service.cost}}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input matInput placeholder="First name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Age">
+    </mat-form-field>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<div *ngIf="loading" class="flex justify-space-around loading-container">
+  <img matCardAvatar width="200px" src="https://66.media.tumblr.com/a7b2b2489b4606f7d5053a62fbb00fcb/tumblr_nk3fc1O4F51r8tkaro1_400.gif" alt="loading">
+</div>

@@ -12,3 +12,7 @@
 .tab-content {
   width: 100%;
 }
+
+.content-body {
+  min-height: 450px;
+}
