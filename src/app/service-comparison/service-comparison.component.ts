@@ -29,7 +29,7 @@ export class ServiceComparisonComponent implements OnInit {
    }
 
   ngOnInit() {
-    setTimeout((_ = this) => {_.loading = false; }, 30000);
+    setTimeout((_ = this) => {_.loading = false; }, 4000);
   }
 
 }

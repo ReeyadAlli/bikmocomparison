@@ -10,13 +10,32 @@
       </mat-panel-description>
     </mat-expansion-panel-header>
 
-    <mat-form-field>
-      <input matInput placeholder="First name">
-    </mat-form-field>
+    <div class="flex justify-space-between">
+      <div>
+        <h2>Summary</h2>
+        <p>
+          - Brake check and adjustment.<br>
+          - Drivetrain check and lubrication top up. <br>
+          - Gears checked and aligned. <br>
+        </p>
+      </div>
 
-    <mat-form-field>
-      <input matInput placeholder="Age">
-    </mat-form-field>
+      <div>
+        <h3>Full description</h3>
+        <p>
+          We carry out a full bike check before any of our service package checks are commenced.
+          We will notify you of any changes required outside of the service. <br>
+
+        </p>
+      </div>
+
+      <div>
+        <h3>Price - $100</h3>
+        <button mat-stroked-button color="primary">
+          <i class="material-icons">add</i>Add To Basket
+        </button>
+      </div>
+    </div>
   </mat-expansion-panel>
 </mat-accordion>
 
